@@ -18,21 +18,21 @@ int main()
 	  
 //	u16 ang;
 //	u16 i = 0 ;
-//***********º¯Êı³õÊ¼»¯**************//
-	/***lcdµ÷ÊÔ²Å¿ªÆô***/
+//***********å‡½æ•°åˆå§‹åŒ–**************//
+	/***lcdè°ƒè¯•æ‰å¼€å¯***/
 	delay_init(); 
 	uart_init(9600) ;
 	LCD_Init();
 	LED_init() ;
-/*** USART2 ³õÊ¼»¯ ***/
-	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2); //ÉèÖÃNVICÖĞ¶Ï·Ö×é2:2Î»ÇÀÕ¼ÓÅÏÈ¼¶£¬2Î»ÏìÓ¦ÓÅÏÈ¼¶
+/*** USART2 åˆå§‹åŒ– ***/
+	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2); //è®¾ç½®NVICä¸­æ–­åˆ†ç»„2:2ä½æŠ¢å ä¼˜å…ˆçº§ï¼Œ2ä½å“åº”ä¼˜å…ˆçº§
 	my_usart2_init(9600) ;
 	s_modelline(fre , SPEEDUP_len , MIN_speed , MAX_speed , 6) ;	
 	
-/*** µç»úÇı¶¯£¨PWM£©³õÊ¼»¯ÆµÂÊ ***/
+/*** ç”µæœºé©±åŠ¨ï¼ˆPWMï¼‰åˆå§‹åŒ–é¢‘ç‡ ***/
 	motor_init(100 , 72 ) ;
 	motor_set_hz(MIN_speed) ;
-/*** µçÎ»¼Æ ³õÊ¼»¯ **/
+/*** ç”µä½è®¡ åˆå§‹åŒ– **/
 	potentiometer_init();
 	
   while(1) 
@@ -58,7 +58,7 @@ int main()
 			 
 		 
    	
-
+//heguanxiang
 
 	 
 
